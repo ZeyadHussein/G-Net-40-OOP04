@@ -69,6 +69,39 @@
 
 
             #endregion
+
+            #region part 2 Practical (Extending the Movie Ticket Booking System)
+
+
+            Cinema cinema = new Cinema();
+            cinema.OpenCinema();
+
+            StandardTicket standard = new StandardTicket(1, "Inception", "A5");
+            VIPTicket vip = new VIPTicket(2, "Avengers", true, 50);
+            IMAXTicket imax = new IMAXTicket(3, "Dune", true);
+
+            Console.WriteLine("\n========== SetPrice Test ==========");
+
+            standard.SetPrice(150);
+            Console.WriteLine("Setting price directly: 150");
+
+            vip.SetPrice(100, 1.5m);
+            Console.WriteLine("Setting price with multiplier: 100 x 1.5 = 150");
+
+            imax.SetPrice(180);
+
+            cinema.AddTicket(standard);
+            cinema.AddTicket(vip);
+            cinema.AddTicket(imax);
+
+            cinema.PrintAllTickets();
+
+            Cinema.ProcessTicket(vip);
+
+            cinema.CloseCinema();
+
+
+            #endregion
         }
     }
 }
