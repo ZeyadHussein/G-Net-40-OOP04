@@ -49,6 +49,24 @@
             */
             #endregion
 
+            #region qouestion 3: What keywords are used for Method Overriding? What does each one mean?
+
+            /*
+            Question:
+            What keywords are used for Method Overriding?
+            What does each one mean?
+
+            Answer:
+
+            virtual:  Used in base class.  Allows a method to be overridden in a child class.
+
+            override: Used in child class. Provides a new implementation of a virtual method.
+
+            base:Used inside child class. Calls the base class version of the method.
+
+            */
+            #endregion
+
 
             #endregion
         }
