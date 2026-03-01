@@ -32,6 +32,23 @@
             */
             #endregion
 
+            #region qouestion 2: What is the difference between method overloading and method overriding?
+
+            /*
+            Question:
+            What is the difference between method overloading and method overriding?
+
+            Answer:
+
+            Method Overloading:
+            Same method name. Different parameters (number, type, or order). Happens inside the same class. Compile-time polymorphism
+
+            Method Overriding: Same method name. Same parameters. Happens between base and derived classes.
+            Requires inheritance. Runtime polymorphism. Uses virtual and override keywords
+
+            */
+            #endregion
+
 
             #endregion
         }
